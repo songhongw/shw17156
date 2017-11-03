@@ -145,5 +145,6 @@ body{
 	display: block;
 	margin-top:.2rem;
 	font-size:.28rem;
+	color:#000;
 }
 </style>
