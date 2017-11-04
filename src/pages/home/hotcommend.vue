@@ -63,7 +63,7 @@
 <style>
 	.hotCommend-top{
 		background: #f2f2f2;
-		padding: .4rem 0;
+		padding: .35rem 0;
 		padding-left: .2rem;
 	}
 	.hotCommend-title {
@@ -72,7 +72,7 @@
 	.hotCommend-introduce .hotCommend-img{
 		width: 1.3rem;
 		height: 1.3rem;
-		margin: .2rem;
+		margin: .24rem;
 		float: left;
 	}
 	
@@ -84,16 +84,16 @@
 	}
 	.hotCommend-introduce dl{
 		float: left;
-		margin-top: .2rem;
+		margin-top: .24rem;
 		color: #ccc;
 	}
 	.hotCommend-introduce dl dt{
-		font-size: .36rem;
+		font-size: .32rem;
 		padding-bottom: .1rem;
 		color: #000000;
 	}
 	.hotCommend-introduce dl .hotCommend-outline{
-		font-size: 0.3rem;
+		font-size: 0.28rem;
 		padding-bottom: .16rem;
 	}
 	.hotCommend-introduce dl .hotCommend-price span{

@@ -4,7 +4,6 @@
  		<swiper-content/>
  		<listitem-content/>
  		<list-hotcommend/>
-
  	</div>
 </template>
 
