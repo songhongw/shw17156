@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/pages/home/Home'
 import List from '@/pages/list/List'
 
+
 Vue.use(Router)
 
 export default new Router({

@@ -103,6 +103,7 @@
 	overflow: hidden;
 	padding-top: .3rem;
 	text-align:center;
+	background:white;
 	
 	
 }
