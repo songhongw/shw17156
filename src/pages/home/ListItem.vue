@@ -33,7 +33,7 @@
 
 <style>
 body{
-	background:#EEEEEE;
+	background:#f2f2f2;
 }
 .listentrance{
 	width:100%;
@@ -41,7 +41,7 @@ body{
 	line-height:0.98rem;
 	background: #fff;
 	text-align: center;
-	border-top:0.01rem solid #ccc;
+	border-top:0.01rem solid #e0e0e0;
 }
 .listentrance .listentrance-item{
 	float:left;
@@ -54,7 +54,7 @@ body{
 	font-size:.28rem;
 }
 .listentrance .listentrance-item-borderright{
-	border-right:0.01rem solid #ccc;
+	border-right:0.01rem solid #e0e0e0;
 }
 .activity-con{
 	width:100%;
@@ -69,7 +69,7 @@ body{
 	background:url(http://img1.qunarzz.com/piao/fusion/1710/a2/e395615b16fb1302.png) center center no-repeat;
 	background-size:auto 100%;
 	height:1.4rem;
-	border-right:0.01rem solid #ccc;
+	border-right:0.01rem solid #e0e0e0;
 }
 .activity-con .activity-con-item2{
 	float:left;
