@@ -38,7 +38,7 @@
 		left: .8rem;
 		right: 1.36rem;
 		top: .14rem;
-		width:5.3rem;
+		width:4.3rem;
 		line-height: .6rem;
 		background: #fff;
 		border-radius: .06rem;

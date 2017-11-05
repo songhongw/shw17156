@@ -28,7 +28,7 @@
  						<a href="#">婺源</a>
  						<a href="#">上海迪士尼乐园</a>
  					</div>
- 					<div class="hotSearchList-group" v-if="1==i?true:false">
+ 					<div class="hotSearchList-group" v-if="2==i?true:false">
  						<a href="#">北京欢乐谷</a>
  						<a href="#">八达岭长城</a>
  						<a href="#">雍和宫</a>
@@ -36,14 +36,14 @@
  						<a href="#">天坛公园</a>
  						<a href="#">华山</a>
  					</div>
- 					<div class="hotSearchList-group" v-if="1==i?true:false">
+ 					<div class="hotSearchList-group" v-if="3==i?true:false">
  						<a href="#">玉龙雪山</a>
  						<a href="#">西岭雪山滑雪场</a>
  						<a href="#">乌镇西栅</a>
  						<a href="#">慈城古镇</a>
  						<a href="#">古北水镇</a>
  					</div>
- 					<div class="hotSearchList-group" v-if="1==i?true:false">
+ 					<div class="hotSearchList-group" v-if="4==i?true:false">
  						<a href="#">都江堰</a>
  						<a href="#">泰山</a>
  						<a href="#">圆明园</a>
@@ -51,7 +51,7 @@
  						<a href="#">武汉欢乐谷</a>
  						<a href="#">泸沽湖</a>
  					</div>
- 					<div class="hotSearchList-group" v-if="1==i?true:false">
+ 					<div class="hotSearchList-group" v-if="5==i?true:false">
  						<a href="#">常州环球动漫嬉戏谷</a>
  						<a href="#">深圳欢乐谷</a>
  						<a href="#">凤凰山海港乐园</a>
@@ -75,23 +75,29 @@
  					<a href="#">重庆</a>
  					<a href="#">天津</a>
  				</div>
- 				<div class="hotSearch-cityGroup" v-if="1==i?true:false">
+ 				<div class="hotSearch-cityGroup" v-if="2==i?true:false">
  					<a href="#">西安</a>
  					<a href="#">南京</a>
  					<a href="#">深圳</a>
  					<a href="#">宁波</a>
  				</div>
- 				<div class="hotSearch-cityGroup" v-if="1==i?true:false">
+ 				<div class="hotSearch-cityGroup" v-if="3==i?true:false">
  					<a href="#">昆明</a>
  					<a href="#">桂林</a>
  					<a href="#">大连</a>
  					<a href="#">杭州</a>
  				</div>
- 				<div class="hotSearch-cityGroup" v-if="1==i?true:false">
+ 				<div class="hotSearch-cityGroup" v-if="4==i?true:false">
  					<a href="#">清远</a>
  					<a href="#">青岛</a>
  					<a href="#">福州</a>
  					<a href="#">惠州</a>
+ 				</div>
+ 				<div class="hotSearch-cityGroup" v-if="5==i?true:false">
+ 					<a href="#">西安</a>
+ 					<a href="#">南京</a>
+ 					<a href="#">深圳</a>
+ 					<a href="#">宁波</a>
  				</div>
  			</div>
  			
@@ -113,7 +119,7 @@
 		 methods:{
 		 	handleSearch:function( ){
 		 		 this.i++;
-		 			if( this.i>1 ){
+		 			if( this.i>5 ){
 		 				this.i=0;
 		 			}
 		 	}
