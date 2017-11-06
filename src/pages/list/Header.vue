@@ -4,9 +4,9 @@
  		<router-link to="/list">
 	 		<input class="header-title" placeholder="输入城市或景点">
  		</router-link>
- 		<div class="header-right">
- 			<div class="header-city-wrapper">
- 				<span class="header-city">搜索</span>
+ 		<div class="header-right1">
+ 			<div class="header-city-wrapper1">
+ 				<span class="header-city1">搜索</span>
  			</div>
  		</div>
  	</header>
@@ -46,18 +46,18 @@
 		color: #000;
 		border:none;
 	}
-	.header-right {
+	.header-right1 {
 		float: right;
 		width: 1.28rem;
 		line-height: .88rem;
 		text-align: center;
 		color: #fff;
 	}
-	.header-city-wrapper {
+	.header-city-wrapper1 {
 		position: relative;
 		padding-right: .3rem;
 	}
-	.header-city {
+	.header-city1 {
 		overflow: hidden;
 		display: inline-block;
 		white-space: nowrap;
