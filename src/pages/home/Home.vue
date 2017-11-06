@@ -3,8 +3,9 @@
  		<index-header/>
  		<index-swiper :swiperInfo="swiperInfo"/>
  		<index-category/>
- 		<index-hotcommend/>
  		<index-iconText/>
+ 		<index-hotcommend/>
+ 		
  		<index-weekList/>
  	</div>
 </template>

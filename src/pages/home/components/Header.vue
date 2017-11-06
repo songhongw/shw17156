@@ -23,6 +23,7 @@
 <style>
 	
 	.header {
+		
 		height: .88rem;
 		background: #00bcd4;
 		overflow: hidden;
@@ -39,6 +40,7 @@
 		position: absolute;
 		left: .8rem;
 		right: 1.36rem;
+		width:5.3rem;
 		top: .14rem;
 		line-height: .6rem;
 		background: #fff;

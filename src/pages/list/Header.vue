@@ -1,6 +1,8 @@
 <template>
  	<header class="header">
- 		<div class="header-left iconfont icon-fanhui"></div>
+ 		<router-link to="/">
+ 			<div class="header-left iconfont icon-fanhui"></div>
+ 		</router-link>
  		<router-link to="/list">
 	 		<input class="header-title" placeholder="输入城市或景点">
  		</router-link>
@@ -38,7 +40,7 @@
 		left: .8rem;
 		right: 1.36rem;
 		top: .14rem;
-		width:4.3rem;
+		width:5.3rem;
 		line-height: .6rem;
 		background: #fff;
 		border-radius: .06rem;
