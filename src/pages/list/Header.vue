@@ -2,13 +2,11 @@
  	<header class="header">
  		<div class="header-left iconfont icon-fanhui"></div>
  		<router-link to="/list">
-	 		<div class="header-title">
-	 			输入城市/景点/游玩主题
-	 		</div>
+	 		<input class="header-title" placeholder="输入城市或景点">
  		</router-link>
- 		<div class="header-right">
- 			<div class="header-city-wrapper">
- 				<span class="header-city">北京</span>
+ 		<div class="header-right1">
+ 			<div class="header-city-wrapper1">
+ 				<span class="header-city1">搜索</span>
  			</div>
  		</div>
  	</header>
@@ -23,7 +21,6 @@
 <style>
 	
 	.header {
-		
 		height: .88rem;
 		background: #00bcd4;
 		overflow: hidden;
@@ -41,38 +38,30 @@
 		left: .8rem;
 		right: 1.36rem;
 		top: .14rem;
+		width:4.3rem;
 		line-height: .6rem;
 		background: #fff;
 		border-radius: .06rem;
 		text-indent: .2rem;
-		color: #ccc;
+		color: #000;
+		border:none;
 	}
-	.header-right {
+	.header-right1 {
 		float: right;
 		width: 1.28rem;
 		line-height: .88rem;
 		text-align: center;
 		color: #fff;
 	}
-	.header-city-wrapper {
+	.header-city-wrapper1 {
 		position: relative;
 		padding-right: .3rem;
 	}
-	.header-city {
+	.header-city1 {
 		overflow: hidden;
 		display: inline-block;
 		white-space: nowrap;
 		width: 1rem;
 		text-overflow: ellipsis;
-	}
-	.header-city::after {
-		content: "\0020";
-		position: absolute;		
-		top: .4rem;
-		right: .14rem;
-		width: 0;
-		height: 0;
-		border: .1rem solid transparent;
-		border-top: .1rem solid #fff;
 	}
 </style>
