@@ -1,12 +1,11 @@
 <template>
 	<div>
- 		<index-header/>
- 		<index-swiper :swiperInfo="swiperInfo"/>
- 		<index-category/>
- 		<index-iconText/>
- 		<index-hotcommend/>
- 		
- 		<index-weekList/>
+ 		<index-header />
+ 		<index-swiper :swiperInfo="swiperInfo" />
+ 		<index-category />
+ 		<index-iconText />
+ 		<index-hotcommend :recommendInfo="recommendInfo" />
+ 		<index-weekList :weekendInfo="weekendInfo" />
  	</div>
 </template>
 
@@ -17,15 +16,9 @@ import Category from "./components/Category";
 import HotCommend from "./components/hotcommend";
 import IconText from "./components/ListItem";
 import Weekend from "./components/weekList";
-import axios from 'axios';
 
 
 export default {
-	data(){
-		return{
-			swiperInfo:[]
-		}
-	},
 	components: {
 		"index-header": Header,
 		"index-swiper": Swiper,
@@ -34,24 +27,22 @@ export default {
 		"index-iconText":IconText,
 		"index-weekList": Weekend
 	},
-	methods:{
-		getDataSwiper(){
-			axios.get('/static/index.json')
-			.then( this.hanDleSwiperSucc.bind( this ) )
-			.catch( this.hanDleSwiperError( this ) );
+	
+	computed:{
+		swiperInfo(){
+			return	this.$store.state.home.swiperInfo;
 		},
-		hanDleSwiperSucc( response ){
-			if( response.status === 200 ){
-				var data = response.data.data;
-				console.log(response.data.data.swiperInfo);
-				this.swiperInfo = data.swiperInfo;
-			}
+		recommendInfo(){
+			return this.$store.state.home.recommendInfo;
 		},
-		hanDleSwiperError( error ){
+		weekendInfo(){
+			return this.$store.state.home.weekendInfo;
 		}
 	},
 	mounted(){
-		this.getDataSwiper();
+		if( this.$store.getters.shouldGetData ){
+			this.$store.dispatch("handleDataIndex")
+		}
 	}
 }
 </script>

@@ -3,60 +3,70 @@
 		<div class='hotCommend-top'>
 			<p class="hotCommend-title">热销推荐</p>
 		</div>	
-		<ul class="hotCommend-ul">
-			<li class="hotCommend-introduce">
-				<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg" alt="故宫" class="hotCommend-img">
-				<dl>
-					<dt>故宫</dt>
-					<dd class="hotCommend-outline">东方宫殿建筑代表，世界宫殿建筑典范</dd>
-					<dd class="hotCommend-price"><span><b>￥</b>40</span>起</dd>
-				</dl>
-			</li>
-			<li class="hotCommend-introduce">
-				<img src="http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_140x140_97813766.jpg" alt="八达岭长城" class="hotCommend-img">
-				<dl>
-					<dt>八达岭长城</dt>
-					<dd class="hotCommend-outline">不到长城非好汉</dd>
-					<dd class="hotCommend-price"><span><b>￥</b>25</span>起</dd>
-				</dl>
-			</li>
-			<li class="hotCommend-introduce">
-				<img src="http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_140x140_e20be8e0.jpg" alt="颐和园" class="hotCommend-img">
-				<dl>
-					<dt>颐和园</dt>
-					<dd class="hotCommend-outline">保存完整的一座皇家行宫御苑</dd>
-					<dd class="hotCommend-price"><span><b>￥</b>22</span>起</dd>
-				</dl>
-			</li>
-			<li class="hotCommend-introduce">
-				<img src="http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_140x140_b05eb1df.jpg" alt="北京欢乐谷" class="hotCommend-img">
-				<dl>
-					<dt>北京欢乐谷</dt>
-					<dd class="hotCommend-outline">七大主题园区带你畅享北京欢乐谷</dd>
-					<dd class="hotCommend-price"><span><b>￥</b>28</span>起</dd>
-				</dl>
-			</li>
-			<li class="hotCommend-introduce">
-				<img src="http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_140x140_eae81520.jpg" alt="慕田峪长城" class="hotCommend-img">
-				<dl>
-					<dt>慕田峪长城</dt>
-					<dd class="hotCommend-outline">秀美长城，关键是人少</dd>
-					<dd class="hotCommend-price"><span><b>￥</b>19.1</span>起</dd>
-				</dl>
-			</li>
-		</ul>
+		<div id="wrapper">
+			<div id="scroller">
+				<ul class="hotCommend-ul">
+					<li class="hotCommend-introduce" v-show="showLoading">加载更多</li>
+					<li class="hotCommend-introduce" v-for="item in recommendInfo" :key="item.id">
+						<img :src="item.imgUrl" alt="故宫" class="hotCommend-img">
+						<dl>
+							<dt>{{item.title}}</dt>
+							<dd class="hotCommend-outline">{{item.description}}</dd>
+							<dd class="hotCommend-price"><span><b>￥</b>{{item.price}}</span>起</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<div class="hotCommend-check">查看所有产品</div>
 	</div>
 	
 </template>
 
 <script>
+require("../../../utils/iscroll-probe.js")
+
   	export default {
-    	
+  		data(){
+  			return{
+  				
+  				showLoading:false
+  			}
+  		},
+    	props:['recommendInfo'],
+    	mounted(){
+//  		this.flag=false,
+    		this.IScroll = new IScroll('#wrapper', { probeType: 3, mouseWheel: true });
+    		this.IScroll.on("scroll",()=>{
+//			if(!this.flag){
+	    			if( this.IScroll.y>50 ){
+	    				this.showLoading=true;
+	    				this.$store.commit("refreshInfo");
+	    			}
+//  			}
+    		})
+    	},
+    	updated(){
+    		setTimeout(()=>{
+    			this.IScroll.refresh();
+//  			this.flag = true;
+    			this.showLoading=false;	
+    		},1000)
+    		
+    	}
 	}
 </script>
 
 <style>
+	#wrapper{
+		height:160px;
+		overflow: hidden;
+	}
+	.hotCommend-ul{
+		width:100%;
+		overflow: hidden;
+		background: #fff;
+	}
 	.hotCommend-top{
 		background: #f2f2f2;
 		padding: .35rem 0;
@@ -73,7 +83,7 @@
 	}
 	
 	.hotCommend-introduce{
-		float: left;
+		clear: both;
 		border-bottom: 1px solid #f2f2f2;
 		background: #FFFFFF;
 		width: 100%;

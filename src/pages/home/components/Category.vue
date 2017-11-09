@@ -115,7 +115,6 @@
 }
 .category-img-container img{
 	width:.66rem;
-	
 	height:.66rem;
 }
 .keywords{
@@ -124,5 +123,9 @@
 	font-size:.28rem;
 	color:#212121;
 	text-align:center;
+	width:1.8rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
 }
 </style>
