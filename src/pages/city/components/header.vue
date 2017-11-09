@@ -1,7 +1,9 @@
 <template>
 	<div>
 		<div class="city-header">
-			<span class="backIndex iconfont icon-fanhui "></span>
+			<router-link to="/">
+				<span class="backIndex iconfont icon-fanhui "></span>
+			</router-link>
 			<ul class="city-con">
 				<li class="city-Domestic"  @click="changeData">国内</li>
 				<li class="city-Foreign"   @click="changeData">海外</li>

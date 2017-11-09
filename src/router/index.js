@@ -5,6 +5,8 @@ import Home from '@/pages/home/Home'
 import List from '@/pages/list/List'
 import AreaCity from '@/pages/areaCity/AreaCity'
 import City from '@/pages/city/City'
+import Daytour from '@/pages/daytour/Daytour'
+
 
 Vue.use(Router)
 
@@ -29,6 +31,11 @@ export default new Router({
     	path:"/areaCity",
     	name:"areaCity",
     	component:AreaCity
+    },
+     {
+      path: '/daytour',
+      name: 'daytour',
+      component: Daytour
     }
   ]
 })

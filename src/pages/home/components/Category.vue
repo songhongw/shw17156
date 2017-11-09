@@ -4,13 +4,15 @@
 			<div class="category-container">
 				<div  class="category-img-container">
 					<img src="http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png"/>
-				
-					<div class="keywords">景点门票</div>
+					<router-link to="/daytour">
+						<div class="keywords">景点门票</div>
+					</router-link>
 				</div>
 		<div  class="category-img-container">
 				<img src="http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png"/>
-			
-				<div class="keywords">动植物园</div>
+				<router-link to="/daytour">
+					<div class="keywords">动植物园</div>
+				</router-link>
 			</div>
 			<div class="category-img-container">
 				<img src="http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png"/>
@@ -19,8 +21,9 @@
 			</div>
 			<div  class="category-img-container" >
 				<img src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png"/>
-			
-				<div class="keywords">一日游</div>
+				<router-link to="/daytour">
+					<div class="keywords">一日游</div>
+				</router-link>
 			</div>
 				
 			<div  class="category-img-container">
