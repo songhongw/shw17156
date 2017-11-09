@@ -7,9 +7,11 @@
 	 		</div>
  		</router-link>
  		<div class="header-right">
- 			<div class="header-city-wrapper">
- 				<span class="header-city">北京</span>
- 			</div>
+ 			<router-link to="/selectCity">
+	 			<div class="header-city-wrapper">
+	 				<span class="header-city">北京</span>
+	 			</div>
+ 			</router-link>
  		</div>
  	</header>
 </template>
@@ -64,6 +66,7 @@
 		white-space: nowrap;
 		width: 1rem;
 		text-overflow: ellipsis;
+		color: #fff;
 	}
 	.header-city::after {
 		content: "\0020";
