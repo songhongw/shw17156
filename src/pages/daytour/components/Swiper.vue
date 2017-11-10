@@ -3,7 +3,7 @@
     	<swiper-slide v-for="item in swiperInfo" :key="item.id">
     		<router-link :to="item.link">
 	    		<div class="swiper-img-con">
-	    			<img class="swiper-img" :src="item.imgUrl">
+	    			<img class="swiper-img" :src="item.imgUrl" >
 	    		</div>
     		</router-link>
     	</swiper-slide>
@@ -13,10 +13,9 @@
 
 <script>
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
-	import {mapState} from "vuex"
 
   	export default {
-  		props:['swiperInfo'],
+  		
     	data() {
 			return {
 				swiperOption: {
@@ -28,6 +27,13 @@
         		}
       		} 
     	},
+    	
+    	computed: {
+    		swiperInfo() {
+    			return this.$store.state.daytour.swiperInfo;
+    		}
+    	},
+
     	components: {
       		swiper,
     		swiperSlide
@@ -47,7 +53,8 @@
 		overflow: hidden;
 		width: 100%;
 		height: 0;
-		padding-bottom: 31.25%;
+		padding-bottom: 26.56%;
+		background: url(bgimg.jpg) 10rem 3.2rem;
 	}
 	.swiper-img {
 		width: 100%;

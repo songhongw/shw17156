@@ -8,9 +8,9 @@
 			<div class="p-info">
 				故宫（AAAAA景区）
 			</div>
-			<div class="iconfont icon-fanhui2 fh">
-				
-			</div>
+			<router-link to="/">
+				<div class="iconfont icon-fanhui1 fh"></div>
+			</router-link>
 		</div>
 		
 		<div class="p-base">
@@ -28,8 +28,6 @@
 			</div>
 		</div>
 		
-		
-		
 		<div p-info-con>
 			<span class="iconfont icon-xiaolian xl"></span>
 			<div class="xing-con">
@@ -45,9 +43,6 @@
 			</div>
 		</div>
 		
-		
-		
-		
 		<div class="p-announce-con">
 			<div class="p-announce-inner">
 				<span class="iconfont icon-labakuai"></span>
@@ -55,21 +50,14 @@
 				9日正常开发，敬请谅解"
 				"因重要活动需要，故宫博物院11月8号周三临时闭馆一天，11月"
 				<span class="iconfont"></span>
-				
 			</div>
 		</div>
-		
-		
-		
 		<div class="p-promote">
 			<h3 class="p-border-bottom">
 			<span class="iconfont icon-dianzanmw dian"></span>
 				去哪儿推荐
 			</h3>
 		</div>
-		
-		
-		
 		<div class="p-border-top">
 			<div class="sw">
 				<span class="p-ellipsis">
@@ -94,15 +82,9 @@
 						预订
 					</em>
 				</a>
-				
 				</div>
-				
-				
 			</div>
 		</div>
-		
-		
-		
 		<div class="p-border-top">
 			<div class="sw">
 				<span class="p-ellipsis">
@@ -116,26 +98,19 @@
 					<ul class="p-light">
 					<span class="iconfont icon-duihao "></span>	
 						<span>可定明日</span>
-					
 					<span class="iconfont icon-duihao tesctag"></span>
 					<span class="tiaojian">
 						条件退
 					</span>
 				</ul>
-				<a class="kuai">
-					<em class="yu">
-						预订
-					</em>
-				</a>
-				
+					<a class="kuai">
+						<em class="yu">
+							预订
+						</em>
+					</a>
 				</div>
-				
-				
 			</div>
 		</div>
-		
-		
-		
 		
 		<div class="p-border-top">
 			<div class="sw">
@@ -148,52 +123,29 @@
 				</strong>
 				<div>
 					<ul class="p-light">
-					<span class="iconfont icon-duihao "></span>	
-						<span>可定明日</span>
-					
-					<span class="iconfont icon-duihao tesctag"></span>
-					<span class="tiaojian">
-						条件退
-					</span>
-				</ul>
-				<a class="kuai">
-					<em class="yu">
-						预订
-					</em>
-				</a>
-				
+						<span class="iconfont icon-duihao "></span>	
+							<span>可定明日</span>
+						
+						<span class="iconfont icon-duihao tesctag"></span>
+						<span class="tiaojian">
+							条件退
+						</span>
+					</ul>
+					<a class="kuai">
+						<em class="yu">
+							预订
+						</em>
+					</a>
 				</div>
-				
-				
 			</div>
 		</div>
-		
-		
-		
 		<h3 class="p-ticket">
 			<span class="iconfont icon-dingpiaoshenqing p-p"></span>
 			故宫成人票
-			
 		</h3>
-		
-		
 		<div class="p-ticket-list">
 			<h5 class="p-ellipsis3"></h5>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		<div class="detail-propose-come-com">
 			<div class="detail-propose-am">
 				<h6>【上午场】故宫成人票+故宫全景手绘地图</h6>
@@ -235,9 +187,6 @@
 				<em class="propose-yd">查看</em>
 			</div>
 		</div>
-		
-		
-		
 	</div>
 	
 </template>
@@ -250,7 +199,10 @@
 </scritp>
 
 
-<style>
+<style scoped>
+html,body{
+	background: #fff;
+}
 .detail-propose-come-com {
 		display: flex;
 		padding: .2rem .2rem .24rem .2rem;

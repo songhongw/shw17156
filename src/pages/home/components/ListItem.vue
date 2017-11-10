@@ -48,6 +48,9 @@ body{
 	width:50%;
 	text-align: center;
 	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .linkwordcolor{
 	color:#000;

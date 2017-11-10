@@ -1,0 +1,308 @@
+{
+	"ret": true,
+	"data": {
+		"swiperInfo": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1710/f5/57137c621d75ba02.jpg_640x170_0d5202d3.jpg",
+			"link": "/list"
+		},{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1710/94/e41712475cc4e702.jpg_640x170_f5dd3e83.jpg",
+			"link": "/list"
+		}],
+		
+		"recommendInfo": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_195x140_9ef40d67.jpg",
+			"title": "八达岭长城",
+			"route1": "有",
+			"route2": "62",
+			"route3": "条路线",
+			"alt": "八达岭长城",
+			"link": "/list"
+			
+		},{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/201403/07/d43a150292bca04bf13c59d24e096530.jpg_195x140_d1764c67.jpg",
+			"title": "明十三陵",
+			"route1": "有",
+			"route2": "8",
+			"route3": "条路线",
+			"alt": "明十三陵",
+			"link": "/list"
+		},{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_195x140_1719cd64.jpg",
+			"title": "颐和园",
+			"route1": "有",
+			"route2": "25",
+			"route3": "条路线",
+			"alt": "颐和园",
+			"link": "/list"
+		},{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_195x140_267be79a.jpg",
+			"title": "故宫",
+			"route1": "有",
+			"route2": "33",
+			"route3": "条路线",
+			"alt": "故宫",
+			"link": "/list"
+		},{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/201401/20/fde1dc70d4f2e388afd53b24f2ec02e0.jpg_195x140_79c5a2e5.jpg",
+			"title": "鸟巢",
+			"route1": "有",
+			"route2": "24",
+			"route3": "条路线",
+			"alt": "鸟巢",
+			"link": "/list"
+		},{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1510/d9/d91e68582076767e.water.jpg_195x140_f72d364d.jpg",
+			"title": "古北水镇",
+			"route1": "有",
+			"route2": "8",
+			"route3": "条路线",
+			"alt": "古北水镇",
+			"link": "/list"
+		}],
+		
+		"hotcityInfo": ["天津", "保定", "葫芦岛", "济南", "成都", "三亚", "丽江", "西安"],
+		
+		"hotrouteInfo":[{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/p/tts0/1707/e3/d77d245a07ca4102.jpg_160x160_70811fa3.jpg",
+			"title": "【爆款】北京八达岭长城+十三陵定陵含地宫鸟巢纯玩一日游",
+			"sale": "已售3400",
+			"score": "4.8分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "118",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/p/tts2/1706/b9/68688c37bace6c02.jpg_160x160_6d2504b7.jpg",
+			"title": "【10点天天发】北京八达岭长城+鸟巢水立方纯玩一日游",
+			"sale": "已售1885",
+			"score": "4.7分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "79",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_160x160_6299ed44.jpg",
+			"title": "【7-12点天天发】八达岭长城+往返直通车+门票，自由可选",
+			"sale": "已售7419",
+			"score": "4.8分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "45",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/p/tts1/1611/34/ce613ef51240ad02.jpg_160x160_dc191e08.jpg",
+			"title": "【5大景点】广场+故宫+八达岭长城+鸟巢水立方，北京一日游",
+			"sale": "已售3350",
+			"score": "4.9分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "148",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_160x160_001cce8d.jpg",
+			"title": "[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游",
+			"sale": "已售892",
+			"score": "4.9分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "208",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/p/tts6/1707/af/2361187e42829e02.jpg_160x160_192a9ff9.jpg",
+			"title": "【天天发】北京古北水镇门票日景夜景+往返直通车+导游服务",
+			"sale": "已售888",
+			"score": "4.9分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "238",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/p/tts8/1707/7a/c6e435c7b0fa5802.jpg_160x160_2d359531.jpg",
+			"title": "【赠杜莎门票】北京八达岭长城+十三陵定陵鸟巢，含地宫门票",
+			"sale": "已售663",
+			"score": "4.8分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "158",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/p/tts4/1706/85/0520350c6a81c602.jpg_160x160_5cbc7f8e.jpg",
+			"title": "【欢度国庆-赠矿泉水】北京八达岭长城+颐和园+王府井1日游",
+			"sale": "已售1560",
+			"score": "4.9分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "108",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 9,
+			"imgUrl": "http://img1.qunarzz.com/p/tts2/1707/50/4af2a43569af3e02.jpg_160x160_1474c790.jpg",
+			"title": "【北京经典市内】天安门广场+故宫+颐和园一日游，赠导游讲解",
+			"sale": "已售1200",
+			"score": "4.8分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "138",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 10,
+			"imgUrl": "http://img1.qunarzz.com/p/tts6/1710/91/1af6f0b15ae5de02.jpg_160x160_99abf603.jpg",
+			"title": "【秋季限定】北京香山赏红叶＋碧云寺秋色＋颐和园皇家园林一日游",
+			"sale": "已售187",
+			"score": "5.0分",
+			"place": "出发地：北京",
+			"sign": "￥",
+			"price": "148",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		}],
+		
+		"ticketInfo": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg",
+			"title": "故宫门票",
+			"comment": "155825评论",
+			"place": "北京·东城区",
+			"sign": "￥",
+			"price": "20",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_200x200_2cce447f.jpg",
+			"title": "颐和园门票",
+			"comment": "21324评论",
+			"place": "北京·海淀区",
+			"sign": "￥",
+			"price": "24.7",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg",
+			"title": "八达岭长城门票",
+			"comment": "23959评论",
+			"place": "北京·延庆县",
+			"sign": "￥",
+			"price": "25",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg",
+			"title": "北京欢乐谷门票",
+			"comment": "48601评论",
+			"place": "北京·朝阳区",
+			"sign": "￥",
+			"price": "12.9",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_200x200_04e174a0.jpg",
+			"title": "慕田峪长城门票",
+			"comment": "8640评论",
+			"place": "北京·怀柔区",
+			"sign": "￥",
+			"price": "19.1",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg",
+			"title": "八达岭长城缆车门票",
+			"comment": "21692评论",
+			"place": "北京·八达岭长城",
+			"sign": "￥",
+			"price": "157.5",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1410/ee/5140b8da5ef82cad730c0810fa81371f.water.jpg_200x200_b2bc6076.jpg",
+			"title": "坡峰岭门票",
+			"comment": "4020评论",
+			"place": "北京·房山区",
+			"sign": "￥",
+			"price": "44.9",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_200x200_444cc7e8.jpg",
+			"title": "圆明园门票",
+			"comment": "12421评论",
+			"place": "北京·海淀区",
+			"sign": "￥",
+			"price": "25",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 9,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/201403/07/52906a98924b5ab7c47b6119a074a8ad.jpg_200x200_710b2780.jpg",
+			"title": "玉渡山门票",
+			"comment": "308评论",
+			"place": "北京·延庆县",
+			"sign": "￥",
+			"price": "51.9",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		},{
+			"id": 10,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg",
+			"title": "北京野生动物园门票",
+			"comment": "7252评论",
+			"place": "北京·大兴区",
+			"sign": "￥",
+			"price": "78.1",
+			"start": "起",
+			"alt": "",
+			"link": "/list"
+		}]
+		
+	}
+}
