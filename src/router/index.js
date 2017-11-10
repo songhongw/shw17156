@@ -8,7 +8,7 @@ import AreaCity from '@/pages/areaCity/AreaCity'
 import City from '@/pages/city/City'
 import Daytour from '@/pages/daytour/Daytour'
 import ListSelect from '@/pages/selectCity/ListSelect'
-
+import Order from '@/pages/order/Order'
 
 Vue.use(Router)
 
@@ -43,11 +43,16 @@ export default new Router({
       path: '/daytour',
       name: 'daytour',
       component: Daytour
-		},
+			},
 		{
       path: '/selectCity',
       name: 'selectCity',
       component: ListSelect
+    },
+    {
+    	path: '/order',
+      name: 'order',
+      component: Order
     }
   ]
 })

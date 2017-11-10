@@ -77,11 +77,13 @@
 						条件退
 					</span>
 				</ul>
-				<a class="kuai">
-					<em class="yu">
-						预订
-					</em>
-				</a>
+				<router-link to="/order">
+					<a class="kuai">
+						<em class="yu">
+							预订
+						</em>
+					</a>
+				</router-link>
 				</div>
 			</div>
 		</div>
@@ -103,11 +105,13 @@
 						条件退
 					</span>
 				</ul>
+				<router-link to="/order">
 					<a class="kuai">
 						<em class="yu">
 							预订
 						</em>
 					</a>
+					</router-link>
 				</div>
 			</div>
 		</div>
