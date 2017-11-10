@@ -127,7 +127,7 @@
 	}
 </script>  
 
-<style>
+<style scoped>
 html,body{
 	background: #F2F2F2;
 }
