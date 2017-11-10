@@ -20,7 +20,7 @@
 	}
 </script>  
 
-<style>
+<style scoped>
 	
 	.header {
 		height: .88rem;

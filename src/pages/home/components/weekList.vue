@@ -19,7 +19,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.weekList-top{
 		height : .8rem;
 		background: #f2f2f2;

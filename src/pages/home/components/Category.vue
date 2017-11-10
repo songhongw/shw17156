@@ -98,7 +98,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 .category-container{
 
 	/*width:100%;*/
