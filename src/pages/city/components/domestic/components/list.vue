@@ -29,9 +29,7 @@
 </template>
 
 <script>
-	import {
-		mapState
-	} from "vuex"
+	import {mapState} from "vuex"
 	export default {
 
 		data() {
@@ -42,7 +40,8 @@
 			},
 			computed: mapState({
 				domesticInfo(state) {
-					return state.city.domesticInfo
+					return state.city.domesticInfo;
+					
 				}
 			}),
 			methods: {
@@ -61,7 +60,10 @@
 					var n = m - asideTop;
 					var v = parseInt(n / asideItemHeight)
 					this.v = v;
-
+				},
+				handleEndTouch(){
+					document.removeEventListener("touchmove", this.handleMoveTouch, false);
+					document.removeEventListener("touchend", this.handleEndTouch, false);
 				}
 			},
 			updated() {

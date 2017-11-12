@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<div>
-			<ul class="cityWord-con" >
-				<li class="cityWord-A" v-for="item in foreignInfo.cities" :key="item.id">{{item.letter}}</li>
+			<ul class="cityWord-con" @touchstart = "handleTouchStart" ref="aside" >
+				<li class="cityWord-A" v-for="(item,key) in foreignInfo.cities" >{{key}}</li>
 			</ul>
 		</div>
 		<div class="listCity-con">
@@ -17,10 +17,10 @@
 				</div>
 			</div>
 			<ul class="cityWord-con-con">
-				<li class="cityLetter" v-for="item in foreignInfo.cities">
-					<span class="letterleft" ref={{item.letter}}>{{item.letter}}</span>
+				<li class="cityLetter" v-for="(item,key) in foreignInfo.cities">
+					<span class="letterleft" :ref="key">{{key}}</span>
 					<ul >
-						<li class="cityWordS" v-for="city in item.city" >{{city}}</li>
+						<li class="cityWordS" v-for="city in item" >{{city}}</li>
 					</ul>
 				</li>
 			</ul>
@@ -29,17 +29,56 @@
 </template>
 
 <script>
+import {mapState} from "vuex"
 	export default{
-		props:['foreignInfo'],
 		data(){
 			return{
-				alphabet:[]
+				alphabet:{},
+				v:''
 			}
 		},
-		mounted(){
-			for(var i in this.foreignInfo ){
-				console.log(this.$refs[i])
+		
+		computed:mapState({
+			foreignInfo(state){
+				return state.city.foreignInfo
 			}
+		}),
+		methods:{
+			handleTouchStart( e ){
+					this.target = e.target;
+					var name = this.target.innerHTML;
+					var top = this.$refs[name][0].offsetTop;
+					document.documentElement.scrollTop = top - 44;
+					document.addEventListener("touchmove", this.handleMoveTouch, false);
+					document.addEventListener("touchend", this.handleEndTouch, false);
+			},
+			handleTouchMove( e ){
+				var asideTop = parseInt(window.getComputedStyle(this.$refs.aside).top)
+					var asideItemHeight = parseInt(getComputedStyle(this.target, null).height);
+					var m = e.touches[0].clientY;
+					var n = m - asideTop;
+					var v = parseInt(n / asideItemHeight)
+					this.v = v;
+			}
+		},
+		updated() {
+				var j = 0;
+				for(var i in this.foreignInfo.cities) {
+
+					this.alphabet[j] = this.$refs[i][0].offsetTop;
+
+					j++;
+				}
+		},
+		watch: {
+			v() {
+					for(var i in this.alphabet) {
+						console.log(i,this.alphabet);
+						if(i == this.v) {
+							document.documentElement.scrollTop = this.alphabet[this.v]-50
+						}
+					}
+				}
 		}
 	}
 </script>
