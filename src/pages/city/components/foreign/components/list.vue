@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<div>
-			<ul class="cityWord-con">
-				<li class="cityWord-A" v-for="item in foreignInfo.cities" :key="item.id">{{item.text}}</li>
+			<ul class="cityWord-con" >
+				<li class="cityWord-A" v-for="item in foreignInfo.cities" :key="item.id">{{item.letter}}</li>
 			</ul>
 		</div>
 		<div class="listCity-con">
@@ -18,7 +18,7 @@
 			</div>
 			<ul class="cityWord-con-con">
 				<li class="cityLetter" v-for="item in foreignInfo.cities">
-					<span class="letterleft">{{item.text}}</span>
+					<span class="letterleft" ref={{item.letter}}>{{item.letter}}</span>
 					<ul >
 						<li class="cityWordS" v-for="city in item.city" >{{city}}</li>
 					</ul>
@@ -30,7 +30,17 @@
 
 <script>
 	export default{
-		props:['foreignInfo']
+		props:['foreignInfo'],
+		data(){
+			return{
+				alphabet:[]
+			}
+		},
+		mounted(){
+			for(var i in this.foreignInfo ){
+				console.log(this.$refs[i])
+			}
+		}
 	}
 </script>
 <style scoped>

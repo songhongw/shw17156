@@ -5,36 +5,45 @@
 				<span class="backIndex iconfont icon-fanhui "></span>
 			</router-link>
 			<ul class="city-con">
-				<li class="city-Domestic"  @click="changeData">国内</li>
-				<li class="city-Foreign"   @click="changeData">海外</li>
+				<li class="city-Domestic" :domestic=true :class="{color:changeColor}"  @click="changeData">国内</li>
+				<li class="city-Foreign"  :class="{color:changeColor}"  @click="changeData">海外</li>
 			</ul>
 		</div>
 	</div>
 </template>
-
 <script>
 	
 	export default{
 		data(){
 			return{
-				show:false
+				show:false,
+				domestic:true,
+				changeColor:true
 			}
 		},
 		methods:{
 			changeData(){
 				if(!this.show){
 					this.show =　true;
+					this.changeColor = false;
+					this.domestic = true;
+					
 				}else{
 					this.show = false;
+					this.changeColor = true;
+					this.domestic = true;
 				}
 				this.$emit("change",this.show)
-			}
+			} 
 			
 		}
 	}
 </script>y
 
 <style scoped>
+	.color{
+		background: white;
+	}
 	.city-header{
 		width:100%;
 		height:.88rem;

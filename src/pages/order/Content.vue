@@ -6,9 +6,7 @@
 					<span class="iconfont icon-fanhui order-com"></span>
 				</router-link>
  		        <p class="title"> 订单填写 </p>			
- 		           
  		        <a class="register " href="" > 登录 </a>
- 				
 			</div>
 			
 			<div class="infrom">
@@ -16,7 +14,6 @@
 				<p class="time">[上午场]</p>	
 				<span class="identity">故宫成人票凭身份证入园</span>
 				<span class="fares">￥40/张</span>	
-				
 			</div>
 			
 			<div class="reservation">

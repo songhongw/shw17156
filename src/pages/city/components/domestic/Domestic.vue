@@ -15,8 +15,6 @@ import List from "./components/list"
 			"Domestic-list":List
 		},
 		methods:{
-			handleGetDistance(){
-			}
 		}
 		
 	}

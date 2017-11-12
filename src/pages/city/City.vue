@@ -2,8 +2,8 @@
 	<div>
 		<City-header @change="changed"/>
 		<City-search />
-		<City-domestic  :domesticInfo="domesticInfo" :data="getData"/>
-		<City-foreign   :foreignInfo="foreignInfo" :data="!getData"/>
+		<City-domestic  :domesticInfo="domesticInfo" v-if="!getData"/>
+		<City-foreign   :foreignInfo="foreignInfo" v-else/>
 	</div>
 </template>
 
@@ -16,7 +16,7 @@ import Foreign from "./components/foreign/Foreign.vue"
 	export default{
 		data(){
 			return{
-				getData:true
+				getData:false
 			}
 		},
 		components:{
@@ -28,7 +28,6 @@ import Foreign from "./components/foreign/Foreign.vue"
 		methods:{
 			changed(e){
 				this.getData=e;
-				
 			}
 		},
 		computed:{
